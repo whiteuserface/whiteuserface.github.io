@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+    <title>Boom_Collection</title>
+    <script type="text/javascript">
+        $(window).resize(function(){resizeYoutube();});
+        $(function(){resizeYoutube();});
+        function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","100%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 310 / 220 ) + "px");} }); }
+      </script>
+</head>
+<body>
+    <div class="skyline">
+        <div class="menubar">Menu</div>
+        <div class="boomlogo">Boom_Collection</div>
+        <div class="login">Login</div>
+    </div>
+    <div class="hotissuelist">
+        <div class="hotone"><iframe width="350" height="250" src="https://www.youtube.com/embed/nDgIVseTkuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="hottwo"><iframe width="350" height="250" src="https://www.youtube.com/embed/G4H1N_yXBiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="hotthree"><iframe width="350" height="250" src="https://www.youtube.com/embed/uGtFvOSmZ8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="hotfour"><iframe width="350" height="250" src="https://www.youtube.com/embed/_a1Fc6nwpks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="bestitem">
+        <div class="bestone"></div>
+        <div class="besttwo"></div>
+        <div class="bestthree"></div>
+        <div class="bestfour"></div>
+    </div>
+    <div class="usedit"></div>
+</body>
+</html>

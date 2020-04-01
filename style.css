@@ -1,0 +1,118 @@
+.skyline{
+    text-align: center;
+    
+}
+.menubar{
+    display:inline-block;
+    
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size:15px;
+    width:40px;
+    height:20px;
+}
+.boomlogo{
+    display:inline-block;
+    padding-top:10px;
+    width:400px;
+    height:50px;
+    font-size:30px;
+    font-family: 'IM Fell French Canon SC', serif;
+    margin-left:auto;
+    margin-right:auto;
+}
+.login{
+    font-family: 'IM Fell French Canon SC', serif;
+    height:20px;
+    width:40px;
+    font-size:15px;
+    display: inline-block;
+}
+
+
+
+
+.hotissuelist{
+    text-align: center;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+    height:520px;
+    
+}
+.hotone{
+    overflow: hidden;
+    margin-top:5px;
+    display:inline-block;
+    border : 1px solid black;
+    width:350px;
+    height:250px;
+}
+.hottwo{
+    overflow: hidden;
+    margin-top:5px;
+    display:inline-block;
+    border:1px solid black; 
+    width:350px;
+    height:250px;
+}
+.hotthree{
+    overflow: hidden;
+    margin-top:5px;
+    display:inline-block;
+    position: relative;
+    border:1px solid black;
+    width:350px;
+    height:250px;
+}
+.hotfour{
+    overflow: hidden;
+    margin-top:5px;
+    display:inline-block;
+    border:1px solid black;
+    width:350px;
+    height:250px;
+}
+
+
+
+
+
+.bestitem{
+    text-align:center;
+    margin-top:5px;
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+    height:465px;
+    border:1px solid black;
+}
+.bestone{
+    display:inline-block;
+    margin-top:5px;
+    width:170px;
+    height:450px;
+    border: 1px solid blue;
+}
+.besttwo{
+    display:inline-block;
+    margin-top:5px;
+    width:170px;
+    height:450px;
+    border: 1px solid blue;
+}
+.bestthree{
+    
+    display:inline-block;
+    margin-top:5px;
+    width:170px;
+    height:450px;
+    border: 1px solid blue;
+}
+.bestfour{
+    display:inline-block;
+    margin-top:5px;
+    width:170px;
+    height:450px;
+    border: 1px solid blue;
+}
