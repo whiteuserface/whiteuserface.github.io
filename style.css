@@ -1,130 +1,149 @@
-@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.menuloginbox{
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  width:1200px;
+}
 
-.skyline{
-    text-align: center;
+#topbutton{
+  margin-top:50px;
+  width:100px;
+  border:none;
+  opacity: 0.8;
 }
 
 
-    .menubutton {
-        background-color: #c47135;
-        border: none;
-        color: #ffffff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: 'IM Fell French Canon SC', serif;
-        font-size: 20px;
-        line-height: 1em;
-        margin: 15px 40px;
-        outline: none;
-        padding: 12px 40px 10px;
-        position: relative;
-        text-transform: uppercase;
-        font-weight: 500;
-      }
-      .menubutton:before,
-      .menubutton:after {
-        border-color: transparent;
-        -webkit-transition: all 0.25s;
-        transition: all 0.25s;
-        border-style: solid;
-        border-width: 0;
-        content: "";
-        height: 24px;
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.modal-fullscreen-menu {
+    background-color: #263315;
+  .logo {
+        transition: all 0.25s ease;
+    padding-left: 2.7rem;
+    padding-bottom: 1rem;
+  }
+  .menu-footer {
+    display: inline-flex;
+    float: right;
+  }
+    .glyphicon-chevron-right {
+        visibility: hidden;
+        font-size: 10px;
+        vertical-align: 2.5px;
+        padding-right: 0.3rem
+    }
+  hr {
+    border: 0;
+    border-top: 1px solid #666;
+    margin: 0.7rem;
+  }
+    .close {
+        color: white;
+        opacity: 1;
+        padding: 3.5rem;
         position: absolute;
-        width: 24px;
-      }
-      .menubutton:before {
-        border-color: #c47135;
-        border-right-width: 2px;
-        border-top-width: 2px;
-        right: -5px;
-        top: -5px;
-      }
-      .menubutton:after {
-        border-bottom-width: 2px;
-        border-color: #c47135;
-        border-left-width: 2px;
-        bottom: -5px;
-        left: -5px;
-      }
-      .menubutton:hover,
-      .menubutton.hover {
-        background-color: #c47135;
-      }
-      .menubutton:hover:before,
-      .menubutton.hover:before,
-      .menubutton:hover:after,
-      .menubutton.hover:after {
+        top: 0;
+        right: 0;
+        z-index: 1;
+        font-size: 5vh;
+    }
+    .modal-dialog {
+        margin: 0 auto;
+        max-width: 298px;
+        display: flex;
         height: 100%;
+        align-items: center;
+    }
+    .modal-content {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+    }
+    .list-group {
+        text-align: left;
+        margin: 0 auto;
         width: 100%;
-      }
+        a {
+            margin: 0.2rem;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #d1d4d7;
+            font-weight: 700;
+            letter-spacing: 0em;
+            border-radius: 20px;
+            border-color: transparent;
+            transition: all 0.25s ease;
+            background-color: transparent;
+            padding: 0.7rem;
+            height: 3rem;
+            line-height: 0;
+            &:hover {
+              color: white;
+                border-radius: 20px;
+                background-color: #141519;
+                .glyphicon-chevron-right {
+                    visibility: visible;
+                }
+                
+                
+                &:before {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.modal-backdrop {
+    &.in {
+        opacity: 1;
+    }
+}
+
+.skyline{
+  position: relative;
+    margin-top:50px;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  
+  .skyline{
+    margin-right:50px;
+  }
+}
+
+
+
+
+
+
+   
 
 
 .boomlogo{
+    color:orangered;
     display:inline-block;
     padding-top:10px;
-    width:800px;
+    width:1000px;
     height:50px;
-    font-size:45px;
-    font-family: 'IM Fell French Canon SC', serif;
+    font-size:60px;
+    font-family: 'Lobster', cursive;
     margin-left:auto;
     margin-right:auto;
 }
-
-.loginbutton {
-    
-    background-color: #c47135;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'IM Fell French Canon SC', serif;
-    font-size: 20px;
-    line-height: 1em;
-    margin: 15px 40px;
-    outline: none;
-    padding: 12px 40px 10px;
-    position: relative;
-    text-transform: uppercase;
-    font-weight: 500;
+@media screen and (max-width: 1000px) {
+  
+  .boomlogo{
+    width: 550px;
+    height:30px;
+    font-size:30px;
   }
-  .loginbutton:before,
-  .loginbutton:after {
-    border-color: transparent;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    border-style: solid;
-    border-width: 0;
-    content: "";
-    height: 24px;
-    position: absolute;
-    width: 24px;
-  }
-  .loginbutton:before {
-    border-color: #c47135;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    right: -5px;
-    top: -5px;
-  }
-  .loginbutton:after {
-    border-bottom-width: 2px;
-    border-color: #c47135;
-    border-left-width: 2px;
-    bottom: -5px;
-    left: -5px;
-  }
-  .loginbutton:hover,
-  .loginbutton.hover {
-    background-color: #c47135;
-  }
-  .loginbutton:hover:before,
-  .loginbutton.hover:before,
-  .loginbutton:hover:after,
-  .loginbutton.hover:after {
-    height: 100%;
-    width: 100%;
-  }
+}
 
 
 
@@ -132,28 +151,33 @@
 
 .hotissuelist{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left:auto;
     margin-right:auto;
-    width:800px;
-    height:520px;
-
+    width:1200px;
+    height:650px;
+}
+@media screen and (max-width: 1000px) {
+  .hotissuelist{
+    width: 550px;
+    height:1200px;
+  }
 }
 .hotone{
     overflow: hidden;
     margin-top:5px;
     display:inline-block;
     border : 1px solid black;
-    width:350px;
-    height:250px;
+    width:550px;
+    height:300px;
 }
 .hottwo{
     overflow: hidden;
     margin-top:5px;
     display:inline-block;
     border:1px solid black; 
-    width:350px;
-    height:250px;
+    width:550px;
+    height:300px;
 }
 .hotthree{
     overflow: hidden;
@@ -161,16 +185,16 @@
     display:inline-block;
     position: relative;
     border:1px solid black;
-    width:350px;
-    height:250px;
+    width:550px;
+    height:300px;
 }
 .hotfour{
     overflow: hidden;
     margin-top:5px;
     display:inline-block;
     border:1px solid black;
-    width:350px;
-    height:250px;
+    width:550px;
+    height:300px;
 }
 
 
@@ -179,21 +203,58 @@
 
 .bestitem{
     text-align:center;
-    margin-top:5px;
+    margin-top:100px;
     margin-left:auto;
     margin-right:auto;
-    width:800px;
+    width:1100px;
     height:400px;
-    border:1px solid black;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+}
+.bestitempicturebox{
+  display:inline-block;
+  width:1080px;
+  height:380px;
+}
+@media screen and (max-width: 1000px) {
+  
+  .bestitem, .bestitembox{
+    width: 550px;
+    height:300px;
+  }
 }
 
 .usedit{
     text-align:center;
-    margin-top:5px;
+    margin-top:100px;
     margin-left:auto;
     margin-right:auto;
-    width:800px;
+    width:1100px;
     height:400px;
-    border:1px solid black;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
 }
+@media screen and (max-width: 1000px) {
+  
+  .usedit{
+    width: 550px;
+    height:300px;
+  }
+}
+
+.footer{
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  width:1100px;
+  height:200px;
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+}
+@media screen and (max-width: 1000px) {
+  
+  .footer{
+    width: 550px;
+    height:100px;
+  }
 }
