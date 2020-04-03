@@ -3,21 +3,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 <link rel="stylesheet" href="./loginstyle.css">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- font end-->
+
+  <!-- jqeury -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- jquery end -->
+
+
 <!------ Include the above in your HEAD tag ---------->
     </head>
 <body>
-    
-    <div class="container">
-    <div class="kpx_login">
-        <h3 class="kpx_authTitle"><a class="login_title" href="./company_home.html">Boom_Collector</a></h3>
+    <!-- MENUFILE -->
+       
+       <div class="container">
+        <div class="kpx_login">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+          <div class="menuloginbox">
+            
+                                <div class="modal fade modal-fullscreen-menu" id="modalNavigation" role="dialog" tabindex="-1">
+                                              
+                                                          <div class="modal-dialog">
+                                                            
+                                                                              <nav class="list-group">
+                                                                                <h1 class="menulogo"><a href="./index.html">Boom_Collection</a></h1>
+                                                                                  <a class="menulistone" href="./company_home.html"><span class="menulistspan
+                                                                                      "></span>Information</a>
+                                                                                  <a class="menulisttwo" href="#"><span class="menulistspan
+                                                                                      "></span>Product</a>
+                                                                                  <a class="menulistthree" href="#"><span class="menulistspan
+                                                                                      "></span>Our ideology</a>
+                                                                                      <a class="menulistfour" href="#"><span class="menulistspan
+                                                                                          "></span> Reportes</a>
+                                                                                          <hr>
+                                                                                <a style="color: rgb(255, 255, 255);" class="menulistfive" href="#"><span class="glyphicon glyphicon-chevron-right
+                                                                                          "></span>Customer Service</a>
+                                                                                  <hr>
+                                                                                  
+                                                                              </nav>
+                                                          </div>
+            </div>
+                                <div class="buttoncontainer">
+                                    <button class="btn btn-primary btn-lg" id="topbutton" data-target="#modalNavigation" data-toggle="modal" type="button">
+                                        Boom_Collection
+                                        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                
+        </div>
+      </div>
+  
+      
+
+    <!-- MENUFILE END -->
+        
         <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
           <div class="col-xs-2 col-sm-2">
             <a href="#" class="btn btn-lg btn-block kpx_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
@@ -120,7 +169,7 @@
           </div> 
     </div>
 
-		<div class="row kpx_row-sm-offset-3 kpx_loginOr">
+		<div class="row kpx_row-sm-offset-3 kpx_loginOr" id="orimage">
 			<div class="col-xs-12 col-sm-6">
 				<hr class="kpx_hrOr">
 				<span class="kpx_spanOr">or</span>
@@ -131,18 +180,17 @@
 			<div class="col-xs-12 col-sm-6">	
 			    <form class="kpx_loginForm" action="" autocomplete="off" method="POST">
 					<div class="input-group">
-						<span class="input-group-addon"><span class="fa fa-user"></span></span>
 						<input type="text" class="form-control" name="username" placeholder="Username">
 					</div>
                     <hr />
 										
 					<div class="input-group">
-						<span class="input-group-addon"><span class="fa fa-key"></span></span>
 						<input  type="password" class="form-control" name="password" placeholder="Password">
 					</div>
-                    <span class="tag tag-danger">Password Error!</span> | <span class="tag tag-success">Login success!</span> | <span class="tag tag-warning">Some of password must not be empty!</span>
+                    
                     <hr />
-					<button class="btn btn-lg btn-outline-primary btn-block" onclick="location.href='./index.html'" type="submit"><i class="fa fa-sign-in"></i> Login</button>
+          <button class="btn btn-lg btn-outline-primary btn-block" onclick="location.href=''" type="submit"><i class="fa fa-sign-in"></i>Login</button>
+          
 				</form>
 			</div>
     	</div>
@@ -164,7 +212,7 @@
 			</div>
             
             <div class="col-lg-12">
-                <p class="text-lg-center text-md-center text-sm-center text-xs-center">Created by <a href="https://whiteuserface.github.io/whiteuserface" target="_blank">Boom_Collection</a></p>
+                <p class="text-lg-center text-md-center text-sm-center text-xs-center">Created by <a href="./company_home.html" target="_blank">Boom_Collection</a></p>
             </div>
 		</div>	    	
 	</div>
@@ -175,8 +223,11 @@
         </div>
         <script>
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+});
 })
+
+
 </script>
 </body>
 </html>
