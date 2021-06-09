@@ -24,6 +24,7 @@
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Contact</a></li>
+					<li><input id="night_day" type="button" value="night" onclick="nightDayHandler(this);"></li>
 				</ul>
 			</nav>
 		</aside> <!-- END COLORLIB-ASIDE -->
@@ -66,6 +67,36 @@
   <script src="popper.js"></script>
   <script src="bootstrap.min.js"></script>
   <script src="main.js"></script>
+	<script>
+	 function LinksSetColor(color){
+		    var alist = document.querySelectorAll('a');
+		    var i = 0;
+		    while(i < alist.length){
+		      alist[i].style.color = color;
+		      i = i + 1;
+		    }
+		  }
+		  function BodySetColor(color){
+		    document.querySelector('body').style.color = color;
+		  }
+		  function BodySetBackgroundColor(color){
+		    document.querySelector('body').style.backgroundColor = color;
+		  }
+		  function nightDayHandler(self){
+		    var target = document.querySelector('body');
+		    if(self.value === 'night'){
+		      Body.setBackgroundColor('black');
+		      Body.setColor('white');
+		      self.value = 'day';
+		      Links.setColor('powderblue');
+		    } else {
+		      Body.setBackgroundColor('white');
+		      Body.setColor('black');
+		      self.value = 'night';
+		      Links.setColor('blue');
+		    }
+		  }
+	</script>
 	
 
 	</body>
