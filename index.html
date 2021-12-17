@@ -13,54 +13,23 @@
     <title>1</title>
 </head>
 
-<body>
-    
-    
-    <div class="container p-1">
-        <div class="row bg-warning">header</div>
-    </div>
-
-<!-- -----------------------------------------------header -->
-    
-    <div class="container p-1">
-        <div class="row" style="max-height: 800px; min-height: 500px;">
-            <!-- stack -->
-            <div class="col-sm-12 col-md-3 col-lg-2 bg-warning p-1">1</div>
-            <!-- map -->
-            <div id="map" class="col-sm-12 col-md-9 col-lg-10 bg-warning p-1">2</div>
-            
-        </div>
-    </div>
-
-    <div class="container p-1">
-        <div class="row">
-            <div class="col-sm-4 bg-warning p-1">1</div>
-            <div class="col-sm-4 bg-warning p-1">2</div>
-            <div class="col-sm-4 bg-warning p-1">3</div>
-        </div>
-    </div>
-
-    <!-- -----------------------------------------------footer -->
-    
-    <div class="container p-1">
-        <div class="row bg-warning">footer</div>
-    </div>
+<body Style="width: 100%; height: 100%;">
+    <div id="map"; Style="width: 100%; height: 100%; "></div>
 
     <!-- --------------------------------map -->
 
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=707fa278ba00ffcce49b9c9c816b67ed"></script>
-	<script>
-		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		    mapOption = {
-		        center: new kakao.maps.LatLng(37.56724, 126.97870), // 지도의 중심좌표
-		        level: 4, // 지도의 확대 레벨
-		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
-		    }; 
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.56724, 126.97870), // 지도의 중심좌표
+                level: 4, // 지도의 확대 레벨
+                mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+            };
 
-		// 지도를 생성한다 
-		var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-	</script>
+        // 지도를 생성한다 
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
